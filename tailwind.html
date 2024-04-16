@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos/main.css" />
+    <script>
+      tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000',
+                        white: '#fff',
+                    }
+                }
+              }
+          }
+    </script>
+    <style type="text/tailwindcss">
+      .btn{
+        @apply font-bold rounded py-2 px-4;
+      }
+      .btn-black{
+        @apply bg-black text-white;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>
+          <span data-text="j"></span>
+          <span>rgb</span>
+        </h3>
+        <label for="burger">
+          <input type="checkbox" id="burger">
+          <span class="btn btn-white">☰</span>
+        </label>
+        <menu>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Carrito</a></li>
+          <li><a href="#">Menú del día</a></li>
+          <li><a href="#">Cliente</a></li>
+        </menu>
+        <button class="btn btn-black">Contáctanos</button>
+      </nav>
+      <div></div>
+    </header>
+  </body>
+</html>
